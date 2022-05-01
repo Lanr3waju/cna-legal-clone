@@ -7,14 +7,14 @@
     <title>Homepage</title>
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="flex">
-      <img src="./img/logo-2.png" alt="header-logo" />
-      <nav>
-        <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold" href="">HOME</a>
+  <body class=" p-1 m-0">
+    <header class="fixed top-0  p-5 w-full bg-white bg-opacity-95 flex justify-evenly  items-center ">
+      <img class="w-min" src="./img/logo-2.png" alt="header-logo" />
+      <nav class="flex justify-around w-2/3">
+        <a href="">HOME</a>
         <a href="">ABOUT US</a>
-        <a href="">PRACTICE AREAS
-            <ul class="hidden">
+        <a id = "drop-down-btn" class="flex justify-between items-center" href="">PRACTICE AREAS <span><img class="w-3 m-1" src="./img/SeekPng.com_down-arrow-png_117107.png" alt=""></span>
+            <ul id = "practice-area-list" class="hidden bg-orange-500 rounded-md absolute z-10 mt-28 p-2">
               <li>Immigration Law</li>
               <li>Corporate Law</li>
               <li>Commercial Law</li>
@@ -28,7 +28,7 @@
 
     <main>
       <section>
-        <h2 class="bg-black">
+        <h2 class="mt-16">
           OUR LAW
         </h2>
         <img src="./img/law.png" alt="law-img" />
@@ -153,5 +153,6 @@
         <a aria-label="twitter link icon" href=""></a>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
