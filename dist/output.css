@@ -35,7 +35,7 @@
 html {
   line-height: 1.5;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  -text-size-adjust: 100%;
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
