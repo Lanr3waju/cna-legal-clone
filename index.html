@@ -8,38 +8,97 @@
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
   <body class=" p-1 m-0">
-    <header class="fixed top-0  p-5 w-full bg-white bg-opacity-95 flex justify-evenly  items-center ">
-      <img class="w-min" src="./img/logo-2.png" alt="header-logo" />
-      <nav class="flex justify-around w-2/3">
-        <a href="">HOME</a>
-        <a href="">ABOUT US</a>
-        <a id = "drop-down-btn" class="flex justify-between items-center" href="">PRACTICE AREAS <span><img class="w-3 m-1" src="./img/SeekPng.com_down-arrow-png_117107.png" alt=""></span>
-            <ul id = "practice-area-list" class="hidden bg-orange-500 rounded-md absolute z-10 mt-28 p-2">
-              <li>Immigration Law</li>
-              <li>Corporate Law</li>
-              <li>Commercial Law</li>
-            </ul>
-        </a>
-        <a href="">OUR TEAM</a>
-        <a href="">BLOG</a>
-        <a href="">CONTACT</a>
+    <header class=" w-full top-0 absolute border-x-cyan-900 h-auto">
+      <nav
+        class="fixed top-0 py-2  px-10 w-full bg-white bg-opacity-95 border-b-2 flex justify-around  items-center "
+      >
+        <img class="w-min p-3" src="./img/logo-2.png" alt="header-logo" />
+        <ul class="flex justify-around items-center flex-wrap w-3/52">
+          <li class=" w-20">
+            <a
+              id="home"
+              class="hover:border-solid border-2 border-transparent transition-all font-sans hover:border-orange-500 p-2 font-bold m-1"
+              href="./index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="w-28">
+            <a
+              id="about-us"
+              class="hover:border-solid border-2 border-transparent transition-all hover:border-orange-500 p-2 font-bold m-1"
+              href="./index.html"
+              >ABOUT US</a
+            >
+          </li>
+          <li class="w-70">
+            <a
+              id="drop-down-btn"
+              class="flex justify-around m-0 transition-all items-center focus:outline-none  hover:border-solid border-transparent border-2 hover:border-orange-500 p-2 font-bold"
+              href=""
+              >PRACTICE AREAS
+              <span
+                ><img class="w-3" src="./img/SeekPng.com_down-arrow-png_117107.png" alt=""
+              /></span>
+              <ul
+                id="practice-area-list"
+                class="hidden bg-orange-500 rounded-md absolute z-10 mt-40 transition-all p-3 w-fit"
+              >
+                <li class="font-bold p-1 transition-all text-sm hover:text-slate-300 text-white">
+                  Immigration Law
+                </li>
+                <li class="font-bold p-1 transition-all text-sm hover:text-slate-300 text-white">
+                  Corporate Law
+                </li>
+                <li class="font-bold p-1 transition-all text-sm hover:text-slate-300 text-white">
+                  Commercial Law
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="w-45">
+            <a
+              id="our-team"
+              class="hover:border-solid border-2 border-transparent transition-all hover:border-orange-500 p-2 font-bold m-1"
+              href=""
+              >OUR TEAM</a
+            >
+          </li>
+          <li class="w-20">
+            <a
+              id="blog"
+              class="hover:border-solid border-2 border-transparent transition-all hover:border-orange-500 p-2 font-bold m-1"
+              href=""
+              >BLOG</a
+            >
+          </li>
+          <li class="w-20">
+            <a
+              id="contact"
+              class="hover:border-solid border-2 border-transparent transition-all hover:border-orange-500 p-2 font-bold m-1"
+              href=""
+              >CONTACT</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2 class="mt-16">
+    <main class="mt-28">
+      <section class="mt-16">
+        <h2>
           OUR LAW
         </h2>
         <img src="./img/law.png" alt="law-img" />
       </section>
 
-      <section>
+      <section class="mt-16">
         <h2 class="bg-sky-600">
           ABOUT US
           <span></span>
         </h2>
-        <h3 class="bg-blue">CNA Legal : We are passionate about achieving the best possible result for you</h3>
+        <h3 class="bg-blue">
+          CNA Legal : We are passionate about achieving the best possible result for you
+        </h3>
         <p>
           CNA LEGAL is the top Sports and Immigration law firm of choice in Nigeria with an
           excellent background in Corporate & Commercial law practice. We provide efficient legal
@@ -54,7 +113,7 @@
         <button type="button">Read More</button>
       </section>
 
-      <section>
+      <section class="mt-16">
         <h2>
           PRACTICE AREAS
           <span></span>
@@ -69,78 +128,82 @@
         </div>
       </section>
 
-      <section>
+      <section class="mt-16">
         <h2>
           BLOG POST
           <span></span>
         </h2>
-          <div>
-            <img src="./img/nl.jpg" alt="New lawyer" />
-            <a href="">
-              <h3>
-                THINGS TO CONSIDER BEFORE HIRING A LAWYER IN NIGERIA
-              </h3>
-            </a>
-            <p>
-              For most people, hiring a lawyer is one of those things they wish they never have to
-              go through, it’s…
-            </p>
-            <button type="button">Read More</button>
-          </div>
-          <div>
-            <img src="./img/lawy.jpg" alt="considering law" />
-            <a href="">
-              <h3>
-                DIFFERENT TYPES OF LAWYERS IN NIGERIA
-              </h3>
-            </a>
-            <p>
-              There are different types of lawyers in Nigeria, and the practice of law is a very big
-              field in Nigeria.…
-            </p>
-            <button type="button">Read More</button>
-          </div>
-          <div>
-            <img src="./img/sport.jpg" alt="Sports Contribution" />
-            <a href="">
-              <h3>
-                CNA LEGAL HOSTS THE BIGGEST YOUTH FOOTBALL TOURNAMENT OF 2015 IN LAGOS STATE,
-                NIGERIA
-              </h3>
-            </a>
-            <p>
-              CNA LEGAL – Nigeria’s No. 1 Immigration and Sports Law Firm in partnership with
-              TopSpot FINLAND is organizing a 5…
-            </p>
-            <button type="button">Read More</button>
-          </div>
+        <div>
+          <img src="./img/nl.jpg" alt="New lawyer" />
+          <a href="">
+            <h3>
+              THINGS TO CONSIDER BEFORE HIRING A LAWYER IN NIGERIA
+            </h3>
+          </a>
+          <p>
+            For most people, hiring a lawyer is one of those things they wish they never have to go
+            through, it’s…
+          </p>
+          <button type="button">Read More</button>
+        </div>
+        <div>
+          <img src="./img/lawy.jpg" alt="considering law" />
+          <a href="">
+            <h3>
+              DIFFERENT TYPES OF LAWYERS IN NIGERIA
+            </h3>
+          </a>
+          <p>
+            There are different types of lawyers in Nigeria, and the practice of law is a very big
+            field in Nigeria.…
+          </p>
+          <button type="button">Read More</button>
+        </div>
+        <div>
+          <img src="./img/sport.jpg" alt="Sports Contribution" />
+          <a href="">
+            <h3>
+              CNA LEGAL HOSTS THE BIGGEST YOUTH FOOTBALL TOURNAMENT OF 2015 IN LAGOS STATE, NIGERIA
+            </h3>
+          </a>
+          <p>
+            CNA LEGAL – Nigeria’s No. 1 Immigration and Sports Law Firm in partnership with TopSpot
+            FINLAND is organizing a 5…
+          </p>
+          <button type="button">Read More</button>
+        </div>
       </section>
 
-      <section>
+      <section class="mt-16">
         <h2>
           OUR CLIENTS
           <span></span>
         </h2>
         <div>
-          <img src="./img/visa.jpg" alt="visa">
-          <img src="./img/golden-tulip.jpg" alt="golden-tulip">
-          <img src="./img/NIS.jpg" alt="Nigeria Immigration Sercice">
-          <img src="./img/NAFDAC.jpg" alt="NAFDAC">
-          <img src="./img/help-to-heal.jpg" alt="help-to-heal">
-          <img src="./img/craco.jpg" alt="craco">
+          <img src="./img/visa.jpg" alt="visa" />
+          <img src="./img/golden-tulip.jpg" alt="golden-tulip" />
+          <img src="./img/NIS.jpg" alt="Nigeria Immigration Sercice" />
+          <img src="./img/NAFDAC.jpg" alt="NAFDAC" />
+          <img src="./img/help-to-heal.jpg" alt="help-to-heal" />
+          <img src="./img/craco.jpg" alt="craco" />
         </div>
       </section>
 
-      <section>
+      <section class="mt-16">
         <h2>
           CONTACT US
           <span></span>
         </h2>
         <form>
-          <input aria-label="enter your name" placeholder="Your Name" type="text">
-          <input aria-label="enter your email" placeholder="Your Email" type="email">
-          <input aria-label="enter the subject of your message" placeholder="Subject" type="text">
-          <textarea name="comments" id="comment" aria-label="Enter your comment" placeholder="comment"></textarea>
+          <input aria-label="enter your name" placeholder="Your Name" type="text" />
+          <input aria-label="enter your email" placeholder="Your Email" type="email" />
+          <input aria-label="enter the subject of your message" placeholder="Subject" type="text" />
+          <textarea
+            name="comments"
+            id="comment"
+            aria-label="Enter your comment"
+            placeholder="comment"
+          ></textarea>
           <button type="submit">Submit</button>
         </form>
       </section>
