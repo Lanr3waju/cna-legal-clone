@@ -35,7 +35,7 @@
 html {
   line-height: 1.5;
   /* 1 */
-  -text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
@@ -488,6 +488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -504,6 +508,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mt-1 {
@@ -588,6 +597,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-auto {
+  margin-bottom: auto;
 }
 
 .inline-block {
@@ -1020,8 +1045,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-300 {
   transition-delay: 300ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .ease-in-out {
@@ -1141,6 +1186,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
+.after\:w-64::after {
+  content: var(--tw-content);
+  width: 16rem;
+}
+
+.last\:w-64:last-child {
+  width: 16rem;
+}
+
+.last\:delay-300:last-child {
+  transition-delay: 300ms;
+}
+
+.only\:w-64:only-child {
+  width: 16rem;
+}
+
+.odd\:w-64:nth-child(odd) {
+  width: 16rem;
+}
+
+.even\:w-64:nth-child(even) {
+  width: 16rem;
+}
+
+.hover\:translate-x-3:hover {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-solid:hover {
   border-style: solid;
 }
@@ -1173,6 +1248,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   stroke: #fff;
 }
 
+.hover\:pr-1:hover {
+  padding-right: 0.25rem;
+}
+
+.hover\:pr-10:hover {
+  padding-right: 2.5rem;
+}
+
 .hover\:text-slate-300:hover {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -1181,6 +1264,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:transition-all:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:transition-transform:hover {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:delay-300:hover {
+  transition-delay: 300ms;
+}
+
+.hover\:delay-500:hover {
+  transition-delay: 500ms;
+}
+
+.hover\:ease-linear:hover {
+  transition-timing-function: linear;
 }
 
 .hover\:before\:translate-y-0:hover::before {
@@ -1197,4 +1304,55 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:hover\:opacity-100:hover::before {
   content: var(--tw-content);
   opacity: 1;
+}
+
+.first\:hover\:translate-x-3:hover:first-child {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.first\:hover\:delay-500:hover:first-child {
+  transition-delay: 500ms;
+}
+
+.first\:hover\:ease-linear:hover:first-child {
+  transition-timing-function: linear;
+}
+
+.hover\:last\:translate-x-3:last-child:hover {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.last\:hover\:translate-x-3:hover:last-child {
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:last\:transition-transform:last-child:hover {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.last\:hover\:transition-transform:hover:last-child {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:last\:delay-500:last-child:hover {
+  transition-delay: 500ms;
+}
+
+.last\:hover\:delay-500:hover:last-child {
+  transition-delay: 500ms;
+}
+
+.hover\:last\:ease-linear:last-child:hover {
+  transition-timing-function: linear;
+}
+
+.last\:hover\:ease-linear:hover:last-child {
+  transition-timing-function: linear;
 }
