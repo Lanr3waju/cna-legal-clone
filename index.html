@@ -353,22 +353,47 @@
         </div>
       </section>
 
-      <section class="mt-16">
-        <h2>
-          CONTACT US
-          <span></span>
-        </h2>
-        <form>
-          <input aria-label="enter your name" placeholder="Your Name" type="text" />
-          <input aria-label="enter your email" placeholder="Your Email" type="email" />
-          <input aria-label="enter the subject of your message" placeholder="Subject" type="text" />
+      <section class="mt-24 bg-slate-800 p-16 ">
+        <div class="flex items-center w-full">
+          <h2 class="text-4xl text-slate-200 font-bold mb-3">
+            CONTACT US
+          </h2>
+          <div class="w-28  ml-4 h-2 rounded-sm bg-orange-500 "></div>
+        </div>
+        <form class="mt-4 text-center">
+          <div class="flex mx-auto justify-between">
+            <input
+              class=" w-[32%]  h-15 p-4 border-2 focus:ring-none focus:bg-slate-300 focus:text-slate-800 text-white transition-all duration-300 focus:border-0 focus:outline-none focus:ring-transparent font-semibold border-white bg-transparent"
+              aria-label="enter your name"
+              placeholder="Your Name"
+              type="text"
+            />
+            <input
+              class=" w-[32%]  h-15 p-4 border-2 focus:ring-none focus:bg-slate-300 focus:text-slate-800 text-white transition-all duration-300 focus:border-0 focus:outline-none focus:ring-transparent font-semibold border-white bg-transparent"
+              aria-label="enter your email"
+              placeholder="Your Email"
+              type="email"
+            />
+            <input
+              class=" w-[32%]  h-15 p-4 border-2 focus:ring-none focus:bg-slate-300 focus:text-slate-800 text-white transition-all duration-300 focus:border-0 focus:outline-none focus:ring-transparent font-semibold border-white bg-transparent"
+              aria-label="enter the subject of your message"
+              placeholder="Subject"
+              type="text"
+            />
+          </div>
           <textarea
             name="comments"
+            class=" block w-full h-72 p-4 border-2 mx-auto mt-8 focus:ring-none focus:bg-slate-300 focus:text-slate-800 text-white transition-all duration-300 focus:border-0 focus:outline-none focus:ring-transparent font-semibold border-white bg-transparent "
             id="comment"
             aria-label="Enter your comment"
             placeholder="comment"
           ></textarea>
-          <button type="submit">Submit</button>
+          <button
+            class=" w-full bg-orange-500 hover:bg-orange-700 transition-all duration-200 font-bold text-white text-xl p-4 mt-10"
+            type="submit"
+          >
+            SEND
+          </button>
         </form>
       </section>
     </main>
