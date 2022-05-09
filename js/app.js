@@ -1,10 +1,10 @@
 const handleEventListener = (element, domClass, domCl, domCla) => {
-  const toggleDomClassList = event => {
+  const toggleDomClassList = (event) => {
     event.preventDefault();
     element.classList.toggle(domClass);
   };
 
-  const manipulateDomClassList = event => {
+  const manipulateDomClassList = (event) => {
     event.preventDefault();
     element.classList.toggle(domCl);
     element.classList.toggle(domCla);
