@@ -1,22 +1,54 @@
 {
-  "name": "html-css-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tailwind-html-css",
+  "version": "1.0.0",
+  "description": "A basic tailwind html css",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "hint": "^6.1.0",
-    "prettier": "1.18.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-scss": "^3.18.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-tailwindcss": "^3.5.0",
+    "hint": "^6.2.0",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-prettier": "^2.0.0",
     "tailwindcss": "^3.0.24"
   },
   "scripts": {
-    "format": "npx prettier  --write **/*.{html,js,json,md,json,yaml,yml,jsx}",
-    "format:check": "npx prettier  --check **/*.{html,js,json,md,json,yaml,yml}",
-    "lint": "npx stylelint \"**/*.css\" --fix",
-    "lint:check": "npx stylelint \"**/*.css\""
-  }
+    "dev": "npx tailwindcss -i ./input.css -o ./output.css",
+    "dev:watch": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "prod": "npx tailwindcss -o output.css --minify",
+    "format": "npx prettier  --write \"**/*.{html,json,yaml,yml,md}\"",
+    "format:check": "npx prettier  --check \"**/*.{html,json,yaml,yml,md}\"",
+    "stylelint": "npx stylelint \"**/*.css\" --fix",
+    "webhint": "npx hint .",
+    "stylelint:check": "npx stylelint \"**/*.css\"",
+    "eslint": "npx eslint \"**/*.js\" --fix",
+    "eslint:check": "npx eslint \"**/*.js\"",
+    "lint": "npx eslint \"**/*.js\" --fix && npx stylelint \"**/*.css\" --fix",
+    "lint:check": "npx eslint \"**/*.js\" && npx stylelint \"**/*.css\" && npx hint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolah2009/tailwind-html-css.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "tailswind"
+  ],
+  "author": "Bola Ahmed Buari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bolah2009/tailwind-html-css/issues"
+  },
+  "homepage": "https://github.com/bolah2009/tailwind-html-css#readme"
 }
